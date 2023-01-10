@@ -1,5 +1,9 @@
 # PracticeWebsite
-Practica de github
 
+## Objetivo del Proyecto
+Practicar los conocimientos aprendidos en HTML y CSS en diagonal con el curso de Git en Platzi
 
-Modificacion desde Spartan en SSH
+## Herramientas utilizadas en el proyecto
+Conocimientos básicos en HTML y CSS
+Visual Studio Code
+Git y GitHub
