@@ -1,0 +1,22 @@
+/* Classes for Title labels*/
+.title1 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.title2 {
+    font-size: 15px;
+    font-family: 'Cambria', 'Cochin';
+    font-weight: bold;
+}
+
+.imported_image {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    width: 100px;
+    height: 100px;
+}
