@@ -1,22 +1,64 @@
+.paragraph {
+    font-size: 5px;
+}
+
 /* Classes for Title labels*/
 .title1 {
     font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "abadi", "cambria","arial";
     font-weight: bold;
 }
 
 .title2 {
     font-size: 15px;
-    font-family: 'Cambria', 'Cochin';
+    font-family: "abadi", 'Cambria', 'Cochin';
     font-weight: bold;
 }
 
+/*images and containers*/
 .imported_image {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 figure {
     width: 100px;
-    height: 100px;
+    height: auto;
+}
+
+/* one line containers */
+.inline_objects {
+    display: inline-block;
+}
+
+/* Nombres de clases y pseudo clases por BEM: Bloque__Elemento--modificador */
+
+.more-tables {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 20px;
+    background-color: #1B3022;
+}
+
+.more-tables__item {
+    display: inline-block;
+
+}
+.more-tables__item a {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+.more-tables__item a:hover {
+    color: #A67DB8;
+}
+.more-tables__item a:active {
+    color: #395756;
+}
+.more-tables__item a::before {
+    content: " -> ";
+}
+.more-tables__item a::after {
+    content: " | ";
 }

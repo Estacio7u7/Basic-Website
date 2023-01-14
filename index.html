@@ -7,10 +7,16 @@
         <title>Mi Primer Website</title>
     </head>
     <body>
-        <figure>
-            <img class="imported_image" src="https://images.pexels.com/photos/4312845/pexels-photo-4312845.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Fotografía del pajarito"/>
-        </figure>
-        <h1>Mi Primer Website en HTML</h1>
+        <ul>
+            <li class="inline_objects">
+                <figure>
+                    <img class="imported_image" src="https://images.pexels.com/photos/4312845/pexels-photo-4312845.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Fotografía del pajarito"/>
+                </figure>
+            </li>
+            <li class="inline_objects">
+                <h1>Mi Primer Website en HTML</h1>
+            </li>
+        </ul>
         <P>
             Website de práctica en HTML totalmente puro. Es una página estática, lo que significa que no estamos consultando una base de datos para actualizar la información que se está mostrando al usuario.
         </P>
@@ -18,8 +24,8 @@
             A continuación encontrarás una tabla con imágenes e información relevante
         </p>
 
-        <table>
-            <th class="title1">Tabla de aves favoritas</th>
+        <table class="kiut-table">
+            <th class="title1" colspan="4">Tabla de aves favoritas</th>
             <tr>
                 <td class="title2"> Nombre </td>
                 <td class="title2"> Foto </td>
@@ -71,8 +77,17 @@
         <p>
             Además, todos los cambios se están guardando en <a href="https://github.com/Estacio7u7/PracticeWebsite">GitHub</a>
         </p>
-        
 
+        <p>
+            Más sitios web:
+        </p>
+
+        <ul class="more-tables">
+            <li class="more-tables__item"><a href="">Tabla con fotos de Gatitos</a></li>
+            <li class="more-tables__item"><a href="">Tabla con fotos de Perritos</a></li>
+            <li class="more-tables__item"><a href="">Tabla con fotos de Vaquitas</a></li>
+            <li class="more-tables__item"><a href="">Tabla con fotos de Caballitos</a></li>
+        </ul>
 
     </body>
 </html>
