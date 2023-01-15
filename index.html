@@ -13,27 +13,28 @@
                     <img class="imported_image" src="https://images.pexels.com/photos/4312845/pexels-photo-4312845.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Fotografía del pajarito"/>
                 </figure>
             </li>
+        
             <li class="inline_objects">
-                <h1>Mi Primer Website en HTML</h1>
+                <h1 class="title0">Mi Primer Website en HTML</h1>
             </li>
         </ul>
         <P>
-            Website de práctica en HTML totalmente puro. Es una página estática, lo que significa que no estamos consultando una base de datos para actualizar la información que se está mostrando al usuario.
+            Website de práctica en HTML con un CSS básico para darle algo de estilo y orden. Es una página estática, lo que significa que no estamos consultando una base de datos para actualizar la información que se está mostrando al usuario.
         </P>
         <p>
             A continuación encontrarás una tabla con imágenes e información relevante
         </p>
 
-        <table class="kiut-table">
-            <th class="title1" colspan="4">Tabla de aves favoritas</th>
-            <tr>
-                <td class="title2"> Nombre </td>
-                <td class="title2"> Foto </td>
-                <td class="title2"> Nombre Cientifico</td>
-                <td class="title2"> Sitio web en Wikipedia</td>
+        <table>
+            <th colspan="4">Tabla de aves favoritas</th>
+            <tr >
+                <td class="title2">Nombre</td>
+                <td class="title2">Foto</td>
+                <td class="title2">Cientifico</td>
+                <td class="title2">Web en Wikipedia</td>
             </tr>
 
-            <tr>
+            <tr >
                 <td> Colibrí </td>
                 <td>
                     <figure>
@@ -45,7 +46,6 @@
                     <a href="https://es.wikipedia.org/wiki/Colibr%C3%AD_(ave)">Colibri es un género de aves apodiformes pertenecientes a la subfamilia de los troquilinos (Trochilinae). El género agrupa a cinco especies con una distribución principalmente neotropical.</a>
                 </td>
             </tr>
-
 
             <tr>
                 <td> Cuervo Grande </td>
@@ -72,6 +72,7 @@
                     <a href="https://es.wikipedia.org/wiki/Haliaeetus_leucocephalus">El águila calva (Haliaeetus leucocephalus), también conocida como águila americana, águila de cabeza blanca, pigargo de cabeza blanca o pigargo americano,2​ es un ave rapaz accipitriforme3​ de la familia Accipitridae, que habita en América del Norte, del sur de Canadá a Baja California Sur y Sonora en México. Se conocen varias subespecies.</a>
                 </td>
             </tr>
+
         </table>
         
         <p>
@@ -89,5 +90,124 @@
             <li class="more-tables__item"><a href="">Tabla con fotos de Caballitos</a></li>
         </ul>
 
+        <p>
+            Practicamos un formulario:
+        </p>
+        <form>
+            <label for="name">
+                <span>¿Cual es tu nombre?</span>
+                <input type="text" id="name" name="name" placeholder="Nombre de pila"/>
+            </label>
+
+            <label for="bornDate">
+                <span>¿Cual es tu fecha de nacimiento?</span>
+                <input type="date" id="bornDate" name="bornDate"/>
+            </label>
+
+            <label for="wakeHour">
+                <span>¿A qué hora te levantas?</span>
+                <input type="time" id="wakeHour" name="wakeHour">
+            </label>
+
+            <input type="submit"/>
+        </form>
+
+        <p>
+            Un formulario con fecha más específica:
+        </p>
+        <form>
+            <label for="outHour">
+                <span>¿Hora de salida?</span>
+                <input type="time" id="outHour" name="outHour"/>
+            </label>
+
+            <label for="week">
+                <span>¿Semana?</span>
+                <input type="week" id="week" name="week"/>
+            </label>
+
+            <label for="month">
+                <span>¿Mes?</span>
+                <input type="month" id="month" name="month"/>
+            </label>
+
+            <input type="submit"/>
+        </form>
+
+        <p>
+            Calendario especifico pero más sencillo:
+        </p>
+        <form>
+            <label for="calendar">
+                <span>¿Hora de salida?</span>
+                <input type="datetime-local" id="calendar" name="calendar"/>
+            </label>
+            <input type="submit"/>
+        </form>
+
+        <p>
+            Información requerida y autocompletada
+        </p>
+        <form>
+            <label for="name_required">
+                <span>Nombre:</span>
+                <input type="text" id="name_required" name="name_required" autocomplete="name" required/>
+            </label>
+
+            <label for="email_required">
+                <span>Email:</span>
+                <input type="email" id="email_required" name="email_required" autocomplete="email" required/>
+            </label>
+
+            <label for="country_required">
+                <span>Pais:</span>
+                <input type="text" id="country_required" name="country_required" autocomplete="country" required/>
+            </label>
+
+            <label for="postalCode_required">
+                <span>Código Postal:</span>
+                <input type="text" id="postalCode_required" name="postalCode_required" autocomplete="postal-code" required/>
+            </label>
+
+            <input type="submit"/>
+        </form>
+
+        <p>
+            Nuestros tan queridos select:
+        </p>
+        <label for="versions">
+            <span>Version requerida: </span>
+            <select name="versiones" id="versions">
+                <option value="1.0">1.0</option>
+                <option value="1.0.1">1.0.1</option>
+                <option value="1.5.1">1.5.1</option>
+                <option value="1.6.2">1.6.2</option>
+                <option value="1.9.5">1.9.5</option>
+            </select>
+        </label>
+
+        <p>
+            Mejores prácticas:
+        </p>
+        <label for="paises">
+            <span>Seleccione un pais de LATAM</span>
+            <input list="paises"/>
+        </label>
+        <datalist id="paises">
+            <option value="Colombia"></option>
+            <option value="Ecuador"></option>
+            <option value="Panama"></option>
+            <option value="Argentina"></option>
+            <option value="Brasil"></option>
+            <option value="Guyana"></option>
+            <option value="Puerto Rico"></option>
+            <option value="Chile"></option>
+            <option value="Bolivia"></option>
+            <option value="Mexico"></option>
+            <option value="Republica Dominicana"></option>
+            <option value="Uruguay"></option>
+            <option value="Paraguar"></option>
+        </datalist>
+    </input>
     </body>
 </html>
