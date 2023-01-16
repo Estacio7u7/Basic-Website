@@ -1,10 +1,32 @@
+/* general styles */
+
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    width: 75%;
+    margin: 30px auto 30px auto;
+
+    
 }
+
 span {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+}
+
+/* Main label on the website */
+.main-title {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    list-style-type: none;
+    background-color: darkblue;
+    
+}
+
+.main-title__title-items {
+    display: inline-block;
+    color: aliceblue;
 }
 
 /* Classes for Title labels*/
@@ -18,52 +40,43 @@ span {
     font-family: "abadi", "cambria","arial";
     font-weight: bold;
 }
-
 .title2 {
     font-size: 15px;
     font-family: "abadi", 'Cambria', 'Cochin';
     font-weight: bold;
 }
-
 /*images and containers*/
+figure {
+    width: 100px;
+    height: auto;
+}
 .imported_image {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
-
-figure {
-    width: 100px;
-    height: auto;
-}
-
-/* one line containers */
-.inline_objects {
-    display: inline-block;
-}
-
 /* Nombres de clases y pseudo clases por BEM: Bloque__Elemento--modificador */
 table {
+    margin: auto;
+    width: 80%;
     border: 2px solid;
     border-color: #1B3022;
-    width: 80%;
-    border-collapse: collapse;
-    border-radius: 10em;
+    border-collapse: separate;
+    border-radius: 10px;
 }
-
 tr, td {
+    width: 20%;
     border: 2px solid;
     border-color: #1B3022;
     padding: 5px;
+    border-spacing: 15px;
 }
-
 .more-tables {
     margin-top: 10px;
     list-style: none;
     padding-left: 20px;
     background-color: #1B3022;
 }
-
 .more-tables__item {
     display: inline-block;
 
@@ -85,3 +98,4 @@ tr, td {
 .more-tables__item a::after {
     content: " | ";
 }
+/* boxes and containers */

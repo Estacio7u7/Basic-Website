@@ -7,14 +7,14 @@
         <title>Mi Primer Website</title>
     </head>
     <body>
-        <ul>
-            <li class="inline_objects">
+        <ul class="main-title">
+            <li class="main-title__title-items">
                 <figure>
                     <img class="imported_image" src="https://images.pexels.com/photos/4312845/pexels-photo-4312845.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Fotografía del pajarito"/>
                 </figure>
             </li>
         
-            <li class="inline_objects">
+            <li class="main-title__title-items">
                 <h1 class="title0">Mi Primer Website en HTML</h1>
             </li>
         </ul>
@@ -151,22 +151,22 @@
         <form>
             <label for="name_required">
                 <span>Nombre:</span>
-                <input type="text" id="name_required" name="name_required" autocomplete="name" required/>
+                <input type="text" id="name_required" placeholder="Nombre" name="name_required" autocomplete="name" required/>
             </label>
 
             <label for="email_required">
                 <span>Email:</span>
-                <input type="email" id="email_required" name="email_required" autocomplete="email" required/>
+                <input type="email" id="email_required" placeholder="Correo electronico" name="email_required" autocomplete="email" required/>
             </label>
 
             <label for="country_required">
                 <span>Pais:</span>
-                <input type="text" id="country_required" name="country_required" autocomplete="country" required/>
+                <input type="text" id="country_required" placeholder="País de residencia" name="country_required" autocomplete="country" required/>
             </label>
 
             <label for="postalCode_required">
                 <span>Código Postal:</span>
-                <input type="text" id="postalCode_required" name="postalCode_required" autocomplete="postal-code" required/>
+                <input type="text" id="postalCode_required" placeholder="ZIP o Codigo Postal" name="postalCode_required" autocomplete="postal-code" required/>
             </label>
 
             <input type="submit"/>
@@ -190,7 +190,7 @@
             Mejores prácticas:
         </p>
         <label for="paises">
-            <span>Seleccione un pais de LATAM</span>
+            <span>Seleccione un pais de LATAM: </span>
             <input list="paises"/>
         </label>
         <datalist id="paises">
