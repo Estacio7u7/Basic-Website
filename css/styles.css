@@ -1,5 +1,9 @@
 /* general styles */
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -14,13 +18,30 @@ span {
     font-size: 15px;
 }
 
+/* Forms */
+
+form {
+    margin: auto;
+    padding: 15px;
+    width: 70%;
+    border-color: #001C55;
+    border: 3px solid;
+    border-radius: 15px;
+    background-color: #0E6BA8;
+}
+
+form label {
+    display: block;
+    margin: 20px auto 20px auto;
+}
+
 /* Main label on the website */
 .main-title {
     width: 80%;
     margin: auto;
     text-align: center;
     list-style-type: none;
-    background-color: darkblue;
+    background-color: #001C55;
     
 }
 
@@ -60,22 +81,23 @@ table {
     margin: auto;
     width: 80%;
     border: 2px solid;
-    border-color: #1B3022;
+    border-color: black;
     border-collapse: separate;
     border-radius: 10px;
 }
 tr, td {
     width: 20%;
     border: 2px solid;
-    border-color: #1B3022;
+    border-color: black;
     padding: 5px;
     border-spacing: 15px;
 }
 .more-tables {
-    margin-top: 10px;
+    margin: 10px auto 10px auto;
+    width: 80%;
     list-style: none;
     padding-left: 20px;
-    background-color: #1B3022;
+    background-color: #001C55;
 }
 .more-tables__item {
     display: inline-block;
@@ -87,15 +109,15 @@ tr, td {
     text-decoration: none;
 }
 .more-tables__item a:hover {
-    color: #A67DB8;
+    color: #A6E1FA;
 }
 .more-tables__item a:active {
-    color: #395756;
+    color: #001C55;
 }
 .more-tables__item a::before {
     content: " -> ";
 }
 .more-tables__item a::after {
-    content: " | ";
+    content: " <- ";
 }
 /* boxes and containers */
