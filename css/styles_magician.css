@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    border: 15px gray solid;
+    background-image: url("https://www.cardmaker.net/uploads/cardmaker_resources/1/backgrounds/normal.png");
+    margin: 15% auto;
+    width: 70%;
+    max-width: 648px;
+    max-height: 966px;
+}
+
+.card__name {
+    font-size: 50px;
+    font-weight: bold;
+    border: 5px gray solid;
+    margin: 10px auto;
+    width: 95%;
+    
+}
+
+.card__points {
+    width: 90%;
+    margin: 0 auto;
+    text-align: end;
+    list-style: none;
+}
+
+.card__points li {
+    display: inline-block;
+    max-width: 7%;
+}
+
+.card__points-star__img {
+    width: 100%;
+}
+
+.card__magician {
+    max-width: 90%;
+    margin: 1% auto 5% auto;
+}
+
+.card__magician__img {
+    max-width: 100%;
+    border: 15px gray solid;
+}
+
+.card__description {
+    border: 10px goldenrod solid;
+    width: 95%;
+    height: 20%;
+    margin: 5% auto 5% auto;
+    padding: 10px;
+}
+
+.card__description p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "ITC SERIF";
+    margin-bottom: 10px;
+}
