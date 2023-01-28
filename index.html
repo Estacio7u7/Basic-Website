@@ -7,37 +7,70 @@
         <title>Mi Primer Website</title>
     </head>
     <body>
-        <div class="main-title">
+        <header class="site-title">
             <figure>
-                <img class="imported_image" src="https://images.pexels.com/photos/4312845/pexels-photo-4312845.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Fotografía del pajarito"/>
+                <a href="https://github.com/Estacio7u7/PracticeWebsite">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="Enlace al proyecto en GitHub"/>
+                </a>
             </figure>
-            <h1 class="title0">Mi Primer Website en HTML</h1>
-        </div>
+            <div>
+                <h1>Mi Primer Website en HTML</h1>
+                <p>
+                    Este sitio web se cre&oacute; para practicar HTML y CSS durante el desarrollo del curso de GitHub en Platzi
+                </p>
+            </div>
+        </header>
+
+        <ul class="main-menu">
+            <li>
+                <a> Opcion 1</a>
+            </li>
+
+            <li>
+                <a> Opcion 2</a>
+            </li>
+
+            <li>
+                <a> Opcion 3</a>
+            </li>
+
+            <li>
+                <a> Opcion 4</a>
+            </li>
+
+            <li>
+                <a> Opcion 5</a>
+            </li>
+
+            <li>
+                <a> Opcion 6</a>
+            </li>
+        </ul>
         
         <P>
             Website de práctica en HTML con un CSS básico para darle algo de estilo y orden. Es una página estática, lo que significa que no estamos consultando una base de datos para actualizar la información que se está mostrando al usuario.
         </P>
         <p>
-            A continuación encontrarás una tabla con imágenes e información relevante
+            A continuación una tabla con algo de información acerca de aves que me gustan un poco
         </p>
 
-        <table>
+        <table class="bird-table">
             <th colspan="4">Tabla de aves favoritas</th>
-            <tr >
-                <td class="title2">Nombre</td>
-                <td class="title2">Foto</td>
-                <td class="title2">Cientifico</td>
-                <td class="title2">Web en Wikipedia</td>
+            <tr>
+                <td>Nombre</td>
+                <td>Foto</td>
+                <td>Cientifico</td>
+                <td>Web en Wikipedia</td>
             </tr>
 
             <tr >
                 <td> Colibrí </td>
                 <td>
                     <figure>
-                        <img class="imported_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Colibri_coruscans.jpg/320px-Colibri_coruscans.jpg" alt="Colibrí picando flores rojas"/>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Colibri_coruscans.jpg/320px-Colibri_coruscans.jpg" alt="Colibrí picando flores rojas"/>
                     </figure>
                 </td>
-                <td class="cientific_name"> Colibri coruscans </td>
+                <td> Colibri coruscans </td>
                 <td>
                     <a href="https://es.wikipedia.org/wiki/Colibr%C3%AD_(ave)">Colibri es un género de aves apodiformes pertenecientes a la subfamilia de los troquilinos (Trochilinae). El género agrupa a cinco especies con una distribución principalmente neotropical.</a>
                 </td>
@@ -47,10 +80,10 @@
                 <td> Cuervo Grande </td>
                 <td>
                     <figure>
-                        <img class="imported_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Cuervo_grande_%28Corvus_corax%29%2C_Arcos_de_la_Frontera%2C_C%C3%A1diz%2C_Espa%C3%B1a%2C_2015-12-08%2C_DD_07.JPG/220px-Cuervo_grande_%28Corvus_corax%29%2C_Arcos_de_la_Frontera%2C_C%C3%A1diz%2C_Espa%C3%B1a%2C_2015-12-08%2C_DD_07.JPG" alt="Imagen de un Cuervo"/>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Cuervo_grande_%28Corvus_corax%29%2C_Arcos_de_la_Frontera%2C_C%C3%A1diz%2C_Espa%C3%B1a%2C_2015-12-08%2C_DD_07.JPG/220px-Cuervo_grande_%28Corvus_corax%29%2C_Arcos_de_la_Frontera%2C_C%C3%A1diz%2C_Espa%C3%B1a%2C_2015-12-08%2C_DD_07.JPG" alt="Imagen de un Cuervo"/>
                     </figure>
                 </td>
-                <td class="cientific_name"> Corvus corax </td>
+                <td> Corvus corax </td>
                 <td>
                     <a href="https://es.wikipedia.org/wiki/Corvus_corax">El cuervo grande (Corvus corax), anteriormente denominado cuervo común por la SEO, es una especie de ave paseriforme de la familia Corvidae. Presente en casi todo el hemisferio septentrional, es la especie de córvido con la mayor superficie de distribución.</a>
                 </td>
@@ -60,154 +93,182 @@
                 <td> Aguila calva </td>
                 <td>
                     <figure>
-                        <img class="imported_image" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/About_to_Launch_%2826075320352%29.jpg" alt="Aguila a punto de alzar vuelo"/>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/About_to_Launch_%2826075320352%29.jpg" alt="Aguila a punto de alzar vuelo"/>
                     </figure>
                 </td>
-                <td class="cientific_name"> Haliaeetus leucocephalus </td>
+                <td> Haliaeetus leucocephalus </td>
                 <td>
                     <a href="https://es.wikipedia.org/wiki/Haliaeetus_leucocephalus">El águila calva (Haliaeetus leucocephalus), también conocida como águila americana, águila de cabeza blanca, pigargo de cabeza blanca o pigargo americano,2​ es un ave rapaz accipitriforme3​ de la familia Accipitridae, que habita en América del Norte, del sur de Canadá a Baja California Sur y Sonora en México. Se conocen varias subespecies.</a>
                 </td>
             </tr>
 
         </table>
+
+        <section class="body-content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dicta dolores suscipit perferendis nemo. Nisi aperiam fuga, delectus mollitia ab nam perferendis. Delectus perferendis natus harum, aliquid quisquam minus nulla.
+            </p>
+
+            <p>
+                Aqui puedes mirar un sitio que hice para practicar posición, display y cualquier tipo de tácticas para ubicar los objetos en el sitio:
+            </p>
+
+            <div>
+                <figure>
+                    <a href="./magicianCard.html">
+                        <img src="https://commondatastorage.googleapis.com/images.pricecharting.com/7cfb09b976617d79f22a7dbdb5d88fc3cac779fc8c3181095c2cac66c03b8c1a/240.jpg" alt="Carta del Mago oscuro">
+                    </a>
+                </figure>
+                
+                <section>
+                    <video src="https://youtu.be/4YscDFCUXJ0" controls preload="auto"></video>
+                </section>
+            </div>
+
+            <p>
+                El video no carga porque está en YouTube y el navegador bloquea la referencia cruzada. Pero <a href="https://youtu.be/4YscDFCUXJ0">aqu&iacute;</a> te dejo el enlace para que lo veas si quieres.
+            </p>
+        </section>
         
-        <p>
-            Además, todos los cambios se están guardando en <a href="https://github.com/Estacio7u7/PracticeWebsite">GitHub</a>
-        </p>
 
-        <p>
-            Más sitios web:
-        </p>
+        <div class="form-container">
+            <p>
+                Practicamos formularios:
+            </p>
 
-        <ul class="more-tables">
-            <li class="more-tables__item"><a href="">Tabla con fotos de Gatitos</a></li>
-            <li class="more-tables__item"><a href="">Tabla con fotos de Perritos</a></li>
-            <li class="more-tables__item"><a href="">Tabla con fotos de Vaquitas</a></li>
-            <li class="more-tables__item"><a href="">Tabla con fotos de Caballitos</a></li>
-        </ul>
+            <form>
+                <label for="name">
+                    <span>¿Cual es tu nombre?</span>
+                    <input type="text" id="name" name="name" placeholder="Nombre de pila"/>
+                </label>
 
-        <p>
-            Practicamos un formulario:
-        </p>
-        <form>
-            <label for="name">
-                <span>¿Cual es tu nombre?</span>
-                <input type="text" id="name" name="name" placeholder="Nombre de pila"/>
-            </label>
+                <label for="bornDate">
+                    <span>¿Cual es tu fecha de nacimiento?</span>
+                    <input type="date" id="bornDate" name="bornDate"/>
+                </label>
 
-            <label for="bornDate">
-                <span>¿Cual es tu fecha de nacimiento?</span>
-                <input type="date" id="bornDate" name="bornDate"/>
-            </label>
+                <label for="wakeHour">
+                    <span>¿A qué hora te levantas?</span>
+                    <input type="time" id="wakeHour" name="wakeHour">
+                </label>
 
-            <label for="wakeHour">
-                <span>¿A qué hora te levantas?</span>
-                <input type="time" id="wakeHour" name="wakeHour">
-            </label>
+                <input type="submit"/>
+            </form>
 
-            <input type="submit"/>
-        </form>
+            <form>
+                <label for="outHour">
+                    <span>¿Hora de salida?</span>
+                    <input type="time" id="outHour" name="outHour"/>
+                </label>
 
-        <p>
-            Un formulario con fecha más específica:
-        </p>
-        <form>
-            <label for="outHour">
-                <span>¿Hora de salida?</span>
-                <input type="time" id="outHour" name="outHour"/>
-            </label>
+                <label for="week">
+                    <span>¿Semana?</span>
+                    <input type="week" id="week" name="week"/>
+                </label>
 
-            <label for="week">
-                <span>¿Semana?</span>
-                <input type="week" id="week" name="week"/>
-            </label>
+                <label for="month">
+                    <span>¿Mes?</span>
+                    <input type="month" id="month" name="month"/>
+                </label>
 
-            <label for="month">
-                <span>¿Mes?</span>
-                <input type="month" id="month" name="month"/>
-            </label>
+                <input type="submit"/>
+            </form>
 
-            <input type="submit"/>
-        </form>
+            <form>
+                <label for="calendar">
+                    <span>¿Hora de salida?</span>
+                    <input type="datetime-local" id="calendar" name="calendar"/>
+                </label>
+                <input type="submit"/>
+            </form>
 
-        <p>
-            Calendario especifico pero más sencillo:
-        </p>
-        <form>
-            <label for="calendar">
-                <span>¿Hora de salida?</span>
-                <input type="datetime-local" id="calendar" name="calendar"/>
-            </label>
-            <input type="submit"/>
-        </form>
+            <form>
+                <label for="name_required">
+                    <span>Nombre:</span>
+                    <input type="text" id="name_required" placeholder="Nombre" name="name_required" autocomplete="name" required/>
+                </label>
+    
+                <label for="email_required">
+                    <span>Email:</span>
+                    <input type="email" id="email_required" placeholder="Correo electronico" name="email_required" autocomplete="email" required/>
+                </label>
+    
+                <label for="country_required">
+                    <span>Pais:</span>
+                    <input type="text" id="country_required" placeholder="País de residencia" name="country_required" autocomplete="country" required/>
+                </label>
+    
+                <label for="postalCode_required">
+                    <span>Código Postal:</span>
+                    <input type="text" id="postalCode_required" placeholder="ZIP o Codigo Postal" name="postalCode_required" autocomplete="postal-code" required/>
+                </label>
+    
+                <input type="submit"/>
+            </form>
 
-        <p>
-            Información requerida y autocompletada
-        </p>
-        <form>
-            <label for="name_required">
-                <span>Nombre:</span>
-                <input type="text" id="name_required" placeholder="Nombre" name="name_required" autocomplete="name" required/>
-            </label>
+            <form>
+                <label for="versions">
+                    <span>Version requerida: </span>
+                    <select name="versiones" id="versions">
+                        <option value="1.0">1.0</option>
+                        <option value="1.0.1">1.0.1</option>
+                        <option value="1.5.1">1.5.1</option>
+                        <option value="1.6.2">1.6.2</option>
+                        <option value="1.9.5">1.9.5</option>
+                    </select>
+                </label>
+            </form>
 
-            <label for="email_required">
-                <span>Email:</span>
-                <input type="email" id="email_required" placeholder="Correo electronico" name="email_required" autocomplete="email" required/>
-            </label>
+            <form>
+                <label for="paises">
+                    <span>Seleccione un pais de LATAM: </span>
+                    <input list="paises"/>
+                </label>
+                <datalist id="paises">
+                    <option value="Colombia"></option>
+                    <option value="Ecuador"></option>
+                    <option value="Panama"></option>
+                    <option value="Argentina"></option>
+                    <option value="Brasil"></option>
+                    <option value="Guyana"></option>
+                    <option value="Puerto Rico"></option>
+                    <option value="Chile"></option>
+                    <option value="Bolivia"></option>
+                    <option value="Mexico"></option>
+                    <option value="Republica Dominicana"></option>
+                    <option value="Uruguay"></option>
+                    <option value="Paraguar"></option>
+                </datalist>
+            </form>
 
-            <label for="country_required">
-                <span>Pais:</span>
-                <input type="text" id="country_required" placeholder="País de residencia" name="country_required" autocomplete="country" required/>
-            </label>
+        </div>
 
-            <label for="postalCode_required">
-                <span>Código Postal:</span>
-                <input type="text" id="postalCode_required" placeholder="ZIP o Codigo Postal" name="postalCode_required" autocomplete="postal-code" required/>
-            </label>
+        <footer class="website-footer">
+            <ul>
+                <li>
+                    <picture>
+                        <a href="https://www.facebook.com/fernando.estacio.90281">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Enlace a mi Facebook personal">
+                        </a>
+                    </picture>
+                </li>
 
-            <input type="submit"/>
-        </form>
+                <li>
+                    <picture>
+                        <a href="https://twitter.com/D_Fernando_EQ">
+                            <img src="https://cdn-icons-png.flaticon.com/512/81/81725.png" alt="Enlace a mi Twitter">
+                        </a>
+                    </picture>
+                </li>
 
-        <p>
-            Nuestros tan queridos select:
-        </p>
-        <form>
-            <label for="versions">
-                <span>Version requerida: </span>
-                <select name="versiones" id="versions">
-                    <option value="1.0">1.0</option>
-                    <option value="1.0.1">1.0.1</option>
-                    <option value="1.5.1">1.5.1</option>
-                    <option value="1.6.2">1.6.2</option>
-                    <option value="1.9.5">1.9.5</option>
-                </select>
-            </label>
-        </form>
-
-        <p>
-            Mejores prácticas:
-        </p>
-
-        <form>
-            <label for="paises">
-                <span>Seleccione un pais de LATAM: </span>
-                <input list="paises"/>
-            </label>
-            <datalist id="paises">
-                <option value="Colombia"></option>
-                <option value="Ecuador"></option>
-                <option value="Panama"></option>
-                <option value="Argentina"></option>
-                <option value="Brasil"></option>
-                <option value="Guyana"></option>
-                <option value="Puerto Rico"></option>
-                <option value="Chile"></option>
-                <option value="Bolivia"></option>
-                <option value="Mexico"></option>
-                <option value="Republica Dominicana"></option>
-                <option value="Uruguay"></option>
-                <option value="Paraguar"></option>
-            </datalist>
-        </form>
+                <li>
+                    <picture>
+                        <a href="https://www.linkedin.com/in/david-fernando-estacio-quiroz/">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="Enlace a mi LinkedIn">
+                        </a>
+                    </picture>
+                </li>
+            </ul>
+        </footer>
     </body>
 </html>
